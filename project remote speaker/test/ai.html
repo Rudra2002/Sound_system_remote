@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=1.0, user-scalable=0">
+
+  <title>Button Links</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body {
+      background: linear-gradient(to right, #00d2ff, #3a7bd5);
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin-top: -3rem;
+    }
+    .row {
+      margin-bottom: 1rem;
+    }
+    .btn {
+      border-radius: 20px;
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .btn-primary {
+      background-color: #00bfff;
+      border-color: #00bfff;
+    }
+    .btn-primary:hover {
+      background-color: #0080ff;
+      border-color: #0080ff;
+    }
+    .btn-secondary {
+      background-color: #ccc;
+      border-color: #ccc;
+    }
+    .btn-secondary:hover {
+      background-color: #bbb;
+      border-color: #bbb;
+    }
+    @media only screen and (max-width: 1000px) {
+    .btn {
+    font-size: 190%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .col-md-4, .col-md-6 {
+    margin-bottom: 0.1%;
+  }
+  .container {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 10%;
+    }
+    }
+    /*
+    @media only screen and (max-height: 1334px) {
+      .container {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 50%;
+    } 
+    }
+    */
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // Get the button element
+    const button = document.querySelector('.btn');
+    
+    // Change mouse cursor on hover
+    button.addEventListener('mouseenter', () => {
+      button.style.cursor = 'pointer';
+    });
+    
+    // Reset mouse cursor when not hovering
+    button.addEventListener('mouseleave', () => {
+      button.style.cursor = 'default';
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="https://www.google.com" class="btn btn-primary btn-block animate">Button 1</a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://www.wikipedia.org" class="btn btn-secondary btn-block animate">Button 2</a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://www.github.com" class="btn btn-primary btn-block animate">Button 3</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="https://www.yahoo.com" class="btn btn-primary btn-block animate">Button 4</a>
+      </div>
+      <div class="col-md-6">
+        <a href="https://www.amazon.com" class="btn btn-primary btn-block animate">Button 5</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="https://www.microsoft.com" class="btn btn-secondary btn-block animate">Button 6</a>
+      </div>
+      <div class="col-md-6">
+        <a href="https://www.apple.com" class="btn btn-secondary btn-block animate">Button 7</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="https://www.youtube.com" class="btn btn-primary btn-block animate">Button 8</a>
+      </div>
+      <div class="col-md-6">
+        <a href="https://www.instagram.com" class="btn btn-primary btn-block animate">Button 9</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="https://www.twitter.com" class="btn btn-secondary btn-block animate">Button 10</a>
+      </div>
+      <div class="col-md-6">
+        <a href="https://www.facebook.com" class="btn btn-secondary btn-block animate">Button 11</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="https://www.linkedin.com" class="btn btn-primary btn-block animate">Button 12</a>
+      </div>
+      <div class="col-md-6">
+        <a href="https://www.reddit.com" class="btn btn-primary btn-block animate">Button 13</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+      $(".animate").hover(function(){
+        $(this).animate({opacity: 0.5}, "fast");
+      }, function(){
+        $(this).animate({opacity: 1}, "fast");
+      });
+    });
+  </script>
+
+</body>
+</html>

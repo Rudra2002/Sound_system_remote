@@ -1,0 +1,9 @@
+power Decoded NEC: 10EF38C7 (32 bits)
+mute  10EF18E7
+input 10EF28D7
+sound 10EF9867
+preset 10EF30CF
+sw.vol + 10EF00FF  - 10EF8877
+c.vol + 10EF20DF - 10EFA857
+s.vol + 10EF10EF  - 10EFB847
+M.vol + 10EF08F7 - 10EFB04F
